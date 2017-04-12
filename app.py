@@ -14,6 +14,6 @@ def getcities():
     res_cities = {}
     res_cities = Cities.query.all()
     return render_template('index.html', res_cities=res_cities)
-    
+
 if __name__ == '__main__':
     app.run()
